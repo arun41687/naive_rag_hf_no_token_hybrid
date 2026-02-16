@@ -86,6 +86,7 @@ Answer + Sources (with SEC items & page numbers)
         - Only required if using gated models (e.g., Phi-3, Llama-2)
 
 6. **Place PDF documents** in the project root:
+   - for local code repo / Colab notebook:
    - `10-Q4-2024-As-Filed.pdf` (Apple 10-K)
    - `tsla-20231231-gen.pdf` (Tesla 10-K)
 
@@ -138,29 +139,6 @@ python main.py --mode query --query "What was Apple's total revenue in 2024?" --
 ```bash
 python main.py --mode evaluate
 ```
-
-### Testing Improvements with PDF Files
-
-Use the new `test_improvements.py` script to validate enhancements and process custom PDFs:
-
-```bash
-# Run validation tests only
-python test_improvements.py
-
-# Process a single PDF
-python test_improvements.py --pdf "path/to/document.pdf"
-
-# Process all PDFs in a folder
-python test_improvements.py --folder "path/to/pdf_folder"
-
-# Process with custom query
-python test_improvements.py --folder "pdfs" --query "What is the total revenue?"
-
-# Skip validation, only process PDFs
-python test_improvements.py --pdf "file.pdf" --skip-validation
-```
-
-See [TEST_USAGE_GUIDE.md](TEST_USAGE_GUIDE.md) for more examples.
 
 ### Python API
 
