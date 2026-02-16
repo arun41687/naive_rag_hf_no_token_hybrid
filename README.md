@@ -2,6 +2,8 @@
 
 A Retrieval-Augmented Generation (RAG) system for answering complex questions about Apple and Tesla's SEC 10-K filings using open-source LLMs.
 
+# COLAB NOTEBOOK LINK: https://github.com/arun41687/naive_rag_hf_no_token_hybrid.git
+
 ## Features
 
 ✅ **Advanced Document Ingestion**: Parse PDF documents with optimized 700-char chunking and SEC item extraction  
