@@ -119,13 +119,17 @@ This document describes the enhanced Retrieval-Augmented Generation (RAG) system
 
 ### 4. LLM Integration
 
-**LLM Choice**: Ollama with Mistral 7B
+**LLM Choice**: "mistralai/Mistral-7B-Instruct-v0.2" - subjected to 4-bit quantization
 - **Why Mistral**:
   - Instruction-tuned open-source model (no API restrictions)
   - 7B parameters: fast inference on standard hardware
   - Strong performance on factual QA tasks
   - Better context adherence than Llama 2 of similar size
   - Supports temperature control for deterministic responses
+  - why 4-bit ??    
+    - 4-bit: ~3.5 GB VRAM (fits on most GPUs)
+    - 8-bit: ~7 GB VRAM (needs RTX 3060+ or better)
+    - FP16: ~14 GB VRAM (needs RTX 3090/4090 or A100)
 
 **Custom Prompting Strategy**:
 
@@ -253,7 +257,7 @@ Questions answered:
    - Multi-document retrieval already implemented
 
 3. **Model Requirements**:
-   - Ollama models require GPU (or CPU with slowdown)
+  - utilised Hugging Face Mistral model (does not require token)
    - Alternative: Hugging Face Inference API for cloud deployment
 
 ---
@@ -277,4 +281,3 @@ Questions answered:
 - FAISS: https://github.com/facebookresearch/faiss
 - Cross-Encoders: https://www.sbert.net/docs/pretrained_cross-encoders.html
 - Mistral 7B: https://mistral.ai/
-- Ollama: https://ollama.ai/
