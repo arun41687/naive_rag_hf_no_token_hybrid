@@ -3,6 +3,11 @@
 A Retrieval-Augmented Generation (RAG) system for answering complex questions about Apple and Tesla's SEC 10-K filings using open-source LLMs.
 
 # COLAB NOTEBOOK LINK: https://github.com/arun41687/naive_rag_hf_no_token_hybrid.git
+**Place PDF documents** in the project root:
+   - for local code repo / Colab notebook:
+   - `10-Q4-2024-As-Filed.pdf` (Apple 10-K) https://drive.google.com/file/d/1CnTx75-B1Yhj4NfJwhhv22qEQaaiQ3n4/view?usp=sharing
+   - `tsla-20231231-gen.pdf` (Tesla 10-K) https://drive.google.com/file/d/180gOfn4vMy_xgb1rw-D1ugmGTEZPxGY7/view?usp=sharing
+   - download them to looal and access through code for colab
 
 ## Features
 
@@ -89,8 +94,9 @@ Answer + Sources (with SEC items & page numbers)
 
 6. **Place PDF documents** in the project root:
    - for local code repo / Colab notebook:
-   - `10-Q4-2024-As-Filed.pdf` (Apple 10-K)
-   - `tsla-20231231-gen.pdf` (Tesla 10-K)
+   - `10-Q4-2024-As-Filed.pdf` (Apple 10-K) https://drive.google.com/file/d/1CnTx75-B1Yhj4NfJwhhv22qEQaaiQ3n4/view?usp=sharing
+   - `tsla-20231231-gen.pdf` (Tesla 10-K) https://drive.google.com/file/d/180gOfn4vMy_xgb1rw-D1ugmGTEZPxGY7/view?usp=sharing
+   - download them to looal and access through code for colab
 
    - for Kaggle notebook:
    - PDFs provided via Kaggle Dataset attachment
