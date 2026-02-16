@@ -1,0 +1,16 @@
+torch>=2.2,<2.4
+transformers>=4.40,<4.42
+accelerate>=0.29,<0.31
+bitsandbytes>=0.43,<0.45
+sentence-transformers==2.6.1
+faiss-cpu>=1.8.0
+scikit-learn==1.4.2
+numpy==1.26.4
+tqdm==4.66.4
+huggingface-hub>=0.23,<0.25
+python-dotenv==1.0.1
+pdfplumber==0.11.4
+nltk==3.8.1
+
+# Note: After installation, download NLTK stopwords:
+# python -c "import nltk; nltk.download('stopwords'); nltk.download('punkt')"
